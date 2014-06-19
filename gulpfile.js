@@ -1,11 +1,16 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 
-gulp.task('default', function() {
+gulp.task('build', function() {
     gulp.src('index.js')
         .pipe(browserify({
             insertGlobals : true,
-            debug : !gulp.env.production
+            standalone : 'skynet-mobile-plugin-greeting',
+            debug : true
         }))
-        .pipe(gulp.dest('./bundle.js'))
+        .pipe(rename('bundle.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./'))
 });
