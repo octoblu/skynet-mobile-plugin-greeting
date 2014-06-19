@@ -1,6 +1,6 @@
 {
   "name": "skynet-mobile-plugin-greeting",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Skynet Mobile Greeting Plugin",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "url": "git://github.com/skynetim/skynet-mobile-plugin-fitbit.git"
   },
   "keywords": [
-    "skynet-mobile-plugin"
+    "skynet-mobile-plugin",
+    "skynet-mobile-plugin",
+    "skynet-plugin"
   ],
   "author": "Octoblu, Inc",
   "license": "MIT",
