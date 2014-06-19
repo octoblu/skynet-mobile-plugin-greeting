@@ -81,3 +81,9 @@ Plugin.prototype.destroy = function () {
     });
 
 };
+
+module.exports = {
+    Plugin: Plugin, // Required
+    optionsSchema: optionsSchema, // Optional
+    messageSchema: messageSchema // Optional
+};
