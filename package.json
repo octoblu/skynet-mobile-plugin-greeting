@@ -1,6 +1,6 @@
 {
   "name": "skynet-mobile-plugin-greeting",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Skynet Mobile Greeting Plugin",
   "main": "index.js",
   "scripts": {
