@@ -1,5 +1,5 @@
 function Plugin(messenger, options, api) {
-    this.name = 'skynet-mobile-plugin-greeting';
+    this.name = require('./package.json').name;
 
     this.messenger = messenger;
     this.options = options;
