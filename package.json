@@ -1,6 +1,6 @@
 {
   "name": "skynet-mobile-plugin-greeting",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Skynet Mobile Greeting Plugin",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/skynetim/skynet-mobile-plugin-fitbit.git"
+    "url": "git://github.com/skynetim/skynet-mobile-plugin-greeting.git"
   },
   "keywords": [
-    "skynet-mobile-plugin",
-    "skynet-plugin"
+    "skynet-mobile-plugin"
   ],
   "author": "Octoblu, Inc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skynetim/skynet-mobile-plugin-fitbit/issues"
+    "url": "https://github.com/skynetim/skynet-mobile-plugin-greeting/issues"
   },
-  "homepage": "https://github.com/skynetim/skynet-mobile-plugin-fitbit",
+  "homepage": "https://github.com/skynetim/skynet-mobile-plugin-greeting",
   "devDependencies": {
     "gulp": "~3.8.1",
     "gulp-browserify": "~0.5.0",
