@@ -6,6 +6,11 @@ function Plugin(messenger, options, api) {
 
     this.api = api; // Mobile Specific
 
+    this.api.logActivity({
+        type: this.name,
+        html: 'Greetings Initialized'
+    });
+
     return this;
 }
 
