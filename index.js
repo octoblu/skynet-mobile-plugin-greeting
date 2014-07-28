@@ -1,5 +1,7 @@
-function Plugin(messenger, options, api) {
-    this.name = require('./package.json').name;
+function Plugin(messenger, options, api, deviceObj) {
+    this.name = deviceObj.name;
+
+    this.uuid = deviceObj.uuid;
 
     this.messenger = messenger;
     this.options = options;
@@ -7,7 +9,7 @@ function Plugin(messenger, options, api) {
     this.api = api; // Mobile Specific
 
     this.api.logActivity({
-        type: this.name,
+        type: deviceObj.name,
         html: 'Greetings Initialized'
     });
 
@@ -82,7 +84,7 @@ Plugin.prototype.destroy = function () {
     //clean up
     this.api.logActivity({
         type: this.name,
-        html: 'Destroying plugin'
+        html: 'Destroying Greeting plugin'
     });
 
 };
