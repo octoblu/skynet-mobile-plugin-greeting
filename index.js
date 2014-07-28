@@ -1,7 +1,12 @@
 function Plugin(messenger, options, api, deviceObj) {
-    this.name = deviceObj.name;
 
-    this.uuid = deviceObj.uuid;
+    if (typeof deviceObj === 'string') {
+        this.name = deviceObj;
+    } else {
+        this.name = deviceObj.name;
+
+        this.uuid = deviceObj.uuid;
+    }
 
     this.messenger = messenger;
     this.options = options;
