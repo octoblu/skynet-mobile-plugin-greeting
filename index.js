@@ -14,7 +14,7 @@ function Plugin(messenger, options, api, deviceObj) {
     this.api = api; // Mobile Specific
 
     this.api.logActivity({
-        type: deviceObj.name,
+        type: this.name,
         html: 'Greetings Initialized'
     });
 
